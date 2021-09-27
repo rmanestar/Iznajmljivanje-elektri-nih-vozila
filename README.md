@@ -22,6 +22,9 @@ Konfiguracijske datoteke:
 5. Osobe - popis osoba s njihovim osobinama
 6. Aktivnosti - aktivnosti za skupni način rada. Aktivnosti koje su zapisane u datoteci se mogu koristiti i kod interaktivnog načina rada (manualnim upisom aktivnosti).
 
+Priložene datoteke su jedan primjer sa svojim sadržajem. Testiranje se može provoditi i na drugim datotekama sa drugačijim sadržajima.
+
+Potrebno je provjeriti ispravnost podataka u datotekama i svaki zapis koji nije ispravan se preskače uz ispis informacije o tome.
 
 Aplikacija ima dva načina rada:
 - Interaktivni način rada
@@ -29,7 +32,13 @@ Aplikacija ima dva načina rada:
 
 Interaktivni način rada podrazumijeva manualno upisivanje naredba od strane korisnika u aplikaciju, dok se u skupnom načinu rada aktivnosti koje želimo izvršiti učitavaju iz datoteke.
 
-Detaljni opis faze dostupan je ovdje.
+Pri pokretanju aplikacije potrebno je inicijalizirati sustav iznajmljivanja električnih vozila tako da se učitaju datoteke: lokacija, vozila, kapaciteta lokacija, cjenika i osoba. Ako pojedini redak u datoteci nije ispravan potrebno ga je ispisati i opisati zašto je neispravan.
+
+Inicijalno sva vozila imaju punu bateriju i ukupan broj prijeđenih kilometara svakog vozila je 0. Slijedi inicijalizacija virtualnog vremena na temelju opcije početnog vremena (parametra -t). Osnovni način izvršavanja aplikacije je u interaktivnom načinu, dok se skupni način provodi upisom parametra -s. Kod interaktivnog načina korisnik upisuje pojedinu aktivnost nakon čega mu se prikazuje rezultat te iste aktivnosti. Zatim može izvršiti sljedeću aktivnost. Kod skupnog načina aktivnosti se izvršavaju slijedno tako da se ispiše aktivnost, a zatim se prikaže rezultat pozvane aktivnosti. Kada se izvrše sve aktivnosti program završava s radom.
+
+Program se može izvršavati sa svojeg izvornog direktorija, ali je također potrebno osigurati da će se pri izvršavanja također moći pozvati sa drugih lokacija. Pokretanje treba funkcionirati upisom relativne adrese/putanje ili upisom apsolutne putanje.
+
+Detaljni opis aktivnosti/naredba dostupan je ovdje.
 
 Tablica uzoraka:
 <p align="center">
@@ -42,6 +51,12 @@ Dijagram klasa:
 </p>
 
 ### Druga faza
+U ovoj fazi bilo je potrebno promijeniti ili dodati poslovna pravila aplikacije, te nadodati aktivnosti koje se mogu izvršavati u programu.
+
+Svakom vozilu je potrebno dodijeliti jednoznačni cjelobrojni identifikator. Tvrtka je provlea reorganiziranje svog poslovanja. Uvedena je nova organizacijska struktura koja se temelji na organizacijskim jedinicama pri čemu postoji jedna koja je ishodišna (nema nadređenu) i ona predstavlja tvrtku. Jedna organizacijska jedinica može sadržavati druge organizacijske jedinice kao i lokacije. Jedna organizacijska jedinica može biti samo u jednoj organizacijskoj jedinici. Svaka lokacija (osim ishodišne) mora biti sastavni dio neke organizacijske jedinice. Jedna lokacija može biti samo u jednoj organizacijskoj jedinici. Svaka lokacija mora biti sastavni dio neke organizacijske jedinice. Svi podaci koji su označeni u datotekama kao (id organizacijske jedinice, lokacije, vozila, itd.) su cijeli brojevi.
+
+Kod unajmljivanja vozila potrebno je odabrati raspoloživo vozilo koje je dosad imalo najmanji broj najmova. U slučaju istog broja najma kod više vozila bira se ono koje ima manji ukupan broj prijeđenih kilometara. U slučaju istog broja prijeđenih km konačan izbor će bit vozilo sa manjim id-om.
+
 Detaljni opis faze dostupan je ovdje.
 
 Tablica uzoraka:
