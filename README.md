@@ -112,7 +112,7 @@ Učitavanje i obrada aktivnosti provodi se na način da se prvo ispiše izvorni 
 Napomena: kako bi se u CMD-u tekst prikazivao u crvenoj boji potrebno je nadodati registry zapis.
 
 <p align="center">
-  <img width="350" height="350" src="https://user-images.githubusercontent.com/45578967/135177561-93102055-bc21-49e1-9a04-dce955a77d08.png">
+  <img width="500" height="350" src="https://user-images.githubusercontent.com/45578967/135177561-93102055-bc21-49e1-9a04-dce955a77d08.png">
 </p>
 
 Tablica uzoraka:
