@@ -90,7 +90,30 @@ Dijagram klasa:
 </p>
 
 ### Treća faza
-Detaljni opis faze dostupan je ovdje.
+U ovoj fazi je bilo navedeno da se kod zapisivanja organizacijske strukture tvrtke treba koristiti uzorak dizajna Composite. Za prolaz po elementima organizacijske strukture potrebno je koristiti vlastiti Iterator. Vozila moraju imati implementiran uzorak dizajna State kako bi se upravljalo stanjima vozila (slobodno, unajmljeno, na punjenju, neispravno). Obavljanje pojedinih aktivnosti s vozilom (na raspolaganju, najam...) treba biti preneseno s vozila na konkretna stanja čime se eliminiraju provjere na samom vozilu.
+
+Tvrtka je uvela novost u svom poslovnom modelu koja se tiče osoba, tj. korisnika prema kojem oni koji žele mogu sklopiti ugovor s tvrtkom kako ne bi odmah morali plaćati račun nakon vraćanja vozila. Korisnik može pratiti svoje neplaćene račune kao i plaćene račune. Ako je ukupan iznos neplaćenih računa prekoračio dopušteni iznos dugovanja (ključ dugovanje u datoteci konfiguracije, opisano detaljnije u nastavku) tada više ne može unajmiti vozilo dok ne podmiri cijelo dugovanje ili dio dugovanja tako da je preostalo manje od dopuštenog iznosa. Inicijalno svi korisnici imaju stanje 0.00 kn tj. nemaju dugovanje.
+
+Računi se evidentiraju, obrađuju i pretražuju pomoću uzorka dizajna Chain-of-Responsibility.
+
+Aplikacija se u ovoj fazi izvodi u skupnom načinu rada ukoliko je u datoteci konfiguracije upisan ključ aktivnosti, inače se izvodi u interaktivnom. Ako je upisan ključ izlaz i ima pridružen naziv datoteke tada cjelokupni izlaz umjesto na ekran korisnika preusmjerava se u datoteku definiranog naziva. To vrijedi samo kada se koristi skupni način rada.
+
+
+Nadodane konfiguracijske datoteke:
+- Konfiguracija_3 - podaci za interaktivni rad programa
+- Konfiguracija_2 - podaci za skupni rad programa
+
+Postojeće rješenje je potrebno refaktorirati na način da bi se koristio uzorak MVC. Zadani elementi definiraju postojanje 3 pogleda, od kojih je jedan za interaktivni način rada, drugi je za skupni način rada s prikazom na ekran korisnika, a treći je za skupni način rada kada se podaci preusmjeravaju u datoteku. Svi ispisi moraju biti obavljeni pomoću jednog od 3 opisana pogleda. Kako se može prelaziti iz skupnog u interaktivni, tako je potrebno omogućiti i obratno, što znači da se mora promijeniti pogled. Korisnik programa mora vidjeti na ekranu u kojem pogledu se trenutno nalazi kod prijelaza.
+
+Podaci se učitavaju iz datoteka (ne za aktivnosti) i provjerava se njihova ispravnog. Ako se ustanovi da se radi o neispranvom podatku potrebno je ispisati izvorni redak podatka i do njega razlog zašto je neispravan. Ako je aktivan jedan od pogleda koji se prikazuje na ekranu, tada se takav redak prikazuje u crvenoj boji. A ako je aktivan pogled s upisom u datoteku tada se takav redak prikazuje, a nakon njega se u sljedećem retku prikazuje znak x u istoj dužini kao i prethodni redak.
+
+Učitavanje i obrada aktivnosti provodi se na način da se prvo ispiše izvorni redak aktivnosti, a u sljedećem retku se ispisuje komentar o aktivnosti, njenom izvršavanju ili ispis podatka koji sadrži aktivnost.
+
+Napomena: kako bi se u CMD-u tekst prikazivao u crvenoj boji potrebno je nadodati registry zapis.
+
+<p align="center">
+  <img width="350" height="350" src="https://user-images.githubusercontent.com/45578967/135177561-93102055-bc21-49e1-9a04-dce955a77d08.png">
+</p>
 
 Tablica uzoraka:
 <p align="center">
