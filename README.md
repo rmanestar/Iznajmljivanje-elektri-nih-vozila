@@ -38,7 +38,7 @@ Inicijalno sva vozila imaju punu bateriju i ukupan broj prijeđenih kilometara s
 
 Program se može izvršavati sa svojeg izvornog direktorija, ali je također potrebno osigurati da će se pri izvršavanja također moći pozvati sa drugih lokacija. Pokretanje treba funkcionirati upisom relativne adrese/putanje ili upisom apsolutne putanje.
 
-Detaljni opis aktivnosti/naredba dostupan je ovdje.
+Detaljni opis aktivnosti/naredba i načina za pokretanje programa dostupan je ovdje.
 
 Tablica uzoraka:
 <p align="center">
@@ -55,9 +55,29 @@ U ovoj fazi bilo je potrebno promijeniti ili dodati poslovna pravila aplikacije,
 
 Svakom vozilu je potrebno dodijeliti jednoznačni cjelobrojni identifikator. Tvrtka je provlea reorganiziranje svog poslovanja. Uvedena je nova organizacijska struktura koja se temelji na organizacijskim jedinicama pri čemu postoji jedna koja je ishodišna (nema nadređenu) i ona predstavlja tvrtku. Jedna organizacijska jedinica može sadržavati druge organizacijske jedinice kao i lokacije. Jedna organizacijska jedinica može biti samo u jednoj organizacijskoj jedinici. Svaka lokacija (osim ishodišne) mora biti sastavni dio neke organizacijske jedinice. Jedna lokacija može biti samo u jednoj organizacijskoj jedinici. Svaka lokacija mora biti sastavni dio neke organizacijske jedinice. Svi podaci koji su označeni u datotekama kao (id organizacijske jedinice, lokacije, vozila, itd.) su cijeli brojevi.
 
-Kod unajmljivanja vozila potrebno je odabrati raspoloživo vozilo koje je dosad imalo najmanji broj najmova. U slučaju istog broja najma kod više vozila bira se ono koje ima manji ukupan broj prijeđenih kilometara. U slučaju istog broja prijeđenih km konačan izbor će bit vozilo sa manjim id-om.
+Kod unajmljivanja vozila potrebno je odabrati raspoloživo vozilo koje je dosad imalo najmanji broj najmova. U slučaju istog broja najma kod više vozila bira se ono koje ima manji ukupan broj prijeđenih kilometara. U slučaju istog broja prijeđenih km konačan izbor će bit vozilo sa manjim id-om. U ovoj fazi bilo je potrebno omogućiti najam različitih vozila (za svaku vrstu vozila smije imati jedan aktivni najam). Dok korisnik ne vrati vozilo određene vrste ne smije unajmiti drugo vozilo te iste vrste. Vozilo koje je vraćeno u neispravnom stanju ne može se dalje iznajmljivati. Korisniku se bilježi broj vraćanja vozila u neispravnom stanju.
 
-Detaljni opis faze dostupan je ovdje.
+Korisniku se za najam vozila izdaje račun, a on predstavlja zaradu za lokaciju u kojoj je vozilo unajmljeno. Račune izdaje središnji sustav tako da svakom računu dodjeli redni broj. Kod računa ne smije se koristiti objektna veza prema lokaciji (ili organizacijskoj jedinici), tako da se bilježi samo id lokacije najma i vraćanja. Kod lokacije (ili organizacijskoj jedinici) ne smije se koristiti objekta veza prema računima koji se odnose na lokaciju najma ili vraćanja vozila.
+
+Nadodane konfiguracijske datoteke:
+- Konfiguracija_1 - podaci za interaktivni rad programa
+- Konfiguracija_2 - podaci za skupni rad programa
+- Cjenik - iznos najma, iznos po satu najma i po prijeđenom km po pojedinoj vrsti vozila
+- Tvrtka - organizacijska struktura tvrtke
+
+U ovoj fazi potrebno je omogućiti izmjenjivanje načina rada (iz interaktivnog u skupni i obratno). Ako u datoteci za skupni rad ne postoji aktivnost za kraj rada tada program prelazi u interaktivni način rada. Nadodane su nove aktivnosti koje su definirane na sljedećoj poveznici.
+
+Detaljni opis aktivnosti/naredba i načina za pokretanje programa dostupan je ovdje.
+
+Kod ispisa strukture poduzeća prvo se ispisuju podaci organizacijske jedinice najviše razine (tvrtka), odnosno ishodišne organizacijske jedinice. Nakon toga slijedi prijelaz u nižu razinu. Uzima se prvi sastavni dio (dijete) te organizacijske jedinice i ispisuju se njegovi podaci, itd. Kada završi ispis svih dijelova pojedine organizacijske jedinice potrebno je ispisati kumulativne podatke njenih dijelova. Zatim se vraća na prethodnu razinu i nastavlja s ispisom ostalih dijelova (braće) itd.
+
+Kada se podaci ispisuju u obliku tablice tada se za stupce s tekstualnim podacima primjenjuje lijevo poravnanje, a za stupce s brojčanim podacima desno poravnanje. Broj znakova za formatiranje tekstualnih podataka određen je opcijom -dt, broj znakova za formatiranje cijelih brojeva (i cijelog dijela realnih brojeva) određen je opcijom -dc, a broj decimalnih mjesta za formatiranje realnih brojeva određen je opcijom -dd. Ako opcije nisu upisane tada se pretpostavlja da je -dt 30, -dc 5, -dd 2.
+
+Potrebno je omogućiti izvršavanje:
+- Putem opcija i naziva datoteka
+- Putem konfiguracijske datoteke
+
+U datoteci konfiguracije sustava (Konfiguracija_1 i Konfiguracija_2) postoje zapisi koji se tretiraju kao oblik ključ=vrijednost. Ključevi su ekvivalentni opcijama, a vrijednosti su nazivi datoteka ili brojevi za formatiranje ispisa podataka. Npr. za opciju -v postoji ključ vozila, a za opciju -l postoji ključ lokacije, za opciju -c postoji ključ cjenik, za opciju -k postoji ključ kapaciteti, za opciju -o postoji ključ osobe, za opciju -t postoji ključ vrijeme, za opciju -s postoji ključ aktivnosti, za opciju -os postoji ključ struktura, za opciju -dt postoji ključ tekst, za opciju -dc postoji ključ cijeli, za opciju -dd postoji ključ decimala. Za nazive datoteka koje se koriste unutar konfiguracijske datoteke vrijede ista pravila kao i kada se koriste opcije i nazivi datoteka (relativni ili apsolutni naziv).
 
 Tablica uzoraka:
 <p align="center">
