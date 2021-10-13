@@ -38,7 +38,9 @@ Inicijalno sva vozila imaju punu bateriju i ukupan broj prijeđenih kilometara s
 
 Program se može izvršavati sa svojeg izvornog direktorija, ali je također potrebno osigurati da će se pri izvršavanja također moći pozvati sa drugih lokacija. Pokretanje treba funkcionirati upisom relativne adrese/putanje ili upisom apsolutne putanje.
 
-Detaljni opis aktivnosti/naredba i načina za pokretanje programa dostupan je ovdje.
+
+
+Detaljni opis aktivnosti/naredba i načina za pokretanje programa dostupan je [ovdje](https://github.com/rmanestar/Iznajmljivanje-elektricnih-vozila/blob/main/rmanestar_zadaca_1/UzDiz_opis_zadace_2020_2021_Z1_v2.pdf).
 
 Tablica uzoraka:
 <p align="center">
@@ -67,7 +69,7 @@ Nadodane konfiguracijske datoteke:
 
 U ovoj fazi potrebno je omogućiti izmjenjivanje načina rada (iz interaktivnog u skupni i obratno). Ako u datoteci za skupni rad ne postoji aktivnost za kraj rada tada program prelazi u interaktivni način rada. Nadodane su nove aktivnosti koje su definirane na sljedećoj poveznici.
 
-Detaljni opis aktivnosti/naredba i načina za pokretanje programa dostupan je ovdje.
+Detaljni opis novih aktivnosti/naredba i načina za pokretanje programa dostupan je [ovdje](https://github.com/rmanestar/Iznajmljivanje-elektricnih-vozila/blob/main/rmanestar_zadaca_2/UzDiz_opis_zadace_2020_2021_Z2_v1.pdf).
 
 Kod ispisa strukture poduzeća prvo se ispisuju podaci organizacijske jedinice najviše razine (tvrtka), odnosno ishodišne organizacijske jedinice. Nakon toga slijedi prijelaz u nižu razinu. Uzima se prvi sastavni dio (dijete) te organizacijske jedinice i ispisuju se njegovi podaci, itd. Kada završi ispis svih dijelova pojedine organizacijske jedinice potrebno je ispisati kumulativne podatke njenih dijelova. Zatim se vraća na prethodnu razinu i nastavlja s ispisom ostalih dijelova (braće) itd.
 
@@ -98,6 +100,7 @@ Računi se evidentiraju, obrađuju i pretražuju pomoću uzorka dizajna Chain-of
 
 Aplikacija se u ovoj fazi izvodi u skupnom načinu rada ukoliko je u datoteci konfiguracije upisan ključ aktivnosti, inače se izvodi u interaktivnom. Ako je upisan ključ izlaz i ima pridružen naziv datoteke tada cjelokupni izlaz umjesto na ekran korisnika preusmjerava se u datoteku definiranog naziva. To vrijedi samo kada se koristi skupni način rada.
 
+Detaljni opis novih aktivnosti/naredba i načina za pokretanje programa dostupan je [ovdje](https://github.com/rmanestar/Iznajmljivanje-elektricnih-vozila/blob/main/rmanestar_zadaca_3/UzDiz_opis_zadace_2020_2021_Z3_v1.pdf)
 
 Nadodane konfiguracijske datoteke:
 - Konfiguracija_3 - podaci za interaktivni rad programa
