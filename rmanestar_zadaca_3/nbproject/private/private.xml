@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/rmanestar_zadaca_1/Rmanestar_zadaca_1.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>279</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/FactoryMethod/ElektricnoVoziloFileLoader.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/FactoryMethod/KapacitetFileLoader.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/ChainOfResponsibility/PretrazivanjeRacuna.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/ChainOfResponsibility/ObradaRacuna.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/ChainOfResponsibility/AbstractUpraviteljRacuna.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/MVC/RadController.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/FactoryMethod/CjenikFileLoader.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/Singleton/PostavkeSingleton.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/State/VoziloState.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/Rmanestar_zadaca_3.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/State/VoziloContext.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/MVC/SkupniNacinKonzolaView.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/FactoryMethod/OrganizacijskaJedinicaFileLoader.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/FactoryMethod/KonfiguracijaFileLoader.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/ElektricnoVozilo.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/MVC/SkupniNacinView.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/FactoryMethod/ElektricnoVoziloFileLoaderCreator.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/MVC/ViewInterface.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/State/NeispravnoState.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/FactoryMethod/OsobaFileLoader.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/FactoryMethod/LokacijaFileLoader.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/ChainOfResponsibility/EvidencijaRacuna.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/MVC/InteraktivniNacinView.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/Aktivnost.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/Osoba.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/FactoryMethod/AktivnostFileLoader.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/Racun.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/FactoryMethod/KonfiguracijaFileLoaderCreator.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/OrganizacijskaJedinica.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/MVC/SkupniNacinAbstract.java</file>
+            <file>file:/C:/Users/Mane/Documents/rmanestar_zadaca_3/src/rmanestar_zadaca_3/Najam.java</file>
+        </group>
+    </open-files>
+</project-private>

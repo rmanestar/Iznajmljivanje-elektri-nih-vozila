@@ -1,0 +1,11 @@
+vozila=C:\Users\Mane\Documents\NetBeansProjects\rmanestar_zadaca_2\datoteke\DZ_2_vozila.txt 
+lokacije=C:\Users\Mane\Documents\NetBeansProjects\rmanestar_zadaca_2\datoteke\DZ_2_lokacije.txt 
+cjenik=C:\Users\Mane\Documents\NetBeansProjects\rmanestar_zadaca_2\datoteke\DZ_2_cjenik.txt 
+kapaciteti=C:\Users\Mane\Documents\NetBeansProjects\rmanestar_zadaca_2\datoteke\DZ_2_lokacije_kapaciteti.txt 
+osobe=C:\Users\Mane\Documents\NetBeansProjects\rmanestar_zadaca_2\datoteke\DZ_2_osobe.txt 
+vrijeme=2020-10-16 08:00:00
+struktura=C:\Users\Mane\Documents\NetBeansProjects\rmanestar_zadaca_2\datoteke\DZ_2_tvrtka.txt
+aktivnosti=C:\Users\Mane\Documents\NetBeansProjects\rmanestar_zadaca_2\datoteke\DZ_2_aktivnosti_2.txt 
+tekst=20
+cijeli=5
+decimala=2

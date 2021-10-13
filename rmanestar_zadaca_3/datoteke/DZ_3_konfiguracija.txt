@@ -1,0 +1,12 @@
+vozila=..\\datoteke\\DZ_3_vozila.txt 
+lokacije=..\\datoteke\\DZ_3_lokacije.txt 
+cjenik=..\\datoteke\\DZ_3_cjenik.txt 
+kapaciteti=..\datoteke\\DZ_3_lokacije_kapaciteti.txt 
+osobe=..\\datoteke\\DZ_3_osobe.txt 
+vrijeme=2020-10-16 08:00:00
+struktura=..\\datoteke\\DZ_3_tvrtka.txt
+aktivnosti=..\\datoteke\\DZ_3_aktivnosti.txt 
+tekst=20
+cijeli=5
+decimala=2
+dugovanje=1000,00
